@@ -1,14 +1,18 @@
 FROM node:16
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY package*.json ./
+COPY tsconfig.json ./
+RUN ls -a
+
+COPY src /app/src
+
 
 RUN npm install
 
-RUN tsc
+RUN npm run build
 
-COPY . .
 
 EXPOSE 8080
 
