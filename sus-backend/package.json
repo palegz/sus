@@ -1,0 +1,19 @@
+{
+  "name": "sus-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "yarn build && node build/index.js",
+    "build": "tsc",
+    "dev": "ts-node index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "ts-node": "^10.7.0"
+  }
+}
