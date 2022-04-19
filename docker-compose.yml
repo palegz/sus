@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  frontend:
+    build: sus-frontend/.
+    ports:
+      - "3000:3000"
+  backend:
+    build: sus-backend/.
+    ports:
+      - "8080:8080"
